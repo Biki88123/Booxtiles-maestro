@@ -1,0 +1,31 @@
+# ===== 大文件：Maestro CLI 与驱动（体积过大，GitHub 单文件上限 100MB） =====
+maestro/
+maestro.zip
+chromedriver/
+chromedriver-win64.zip
+
+# ===== 敏感信息：测试账号与验证码，严禁上传 =====
+测试地址和测试账号
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== 测试报告与调试产物 =====
+reports/allure-results/
+reports/*.html
+.maestro/
+*.log
+
+# ===== 系统/编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
