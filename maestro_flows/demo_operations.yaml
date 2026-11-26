@@ -1,0 +1,23 @@
+# Maestro 常用操作演示 flow
+# 运行：修改 run_web.ps1 最后一行文件名为本文件，或直接 maestro test 本文件
+
+url: https://nano-dev-us.boox.com/
+---
+# 1. 打开页面 + 断言可见文本
+- launchApp
+- assertVisible: "Import books"
+
+# 2. 滚动页面
+- scroll:
+    direction: DOWN
+
+# 3. 点击元素（按文本）
+- tapOn: "登录"
+
+# 4. 输入文字 + 回车（以站点的搜索框为例，实际选择器需按页面调整）
+# - tapOn: "Search"
+# - inputText: "boox"
+# - pressKey: "enter"
+
+# 5. 截图保存（可在调试目录查看）
+- takeScreenshot: demo_home

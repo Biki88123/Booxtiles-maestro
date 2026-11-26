@@ -1,0 +1,6 @@
+url: https://nano-dev-us.boox.com/
+---
+- launchApp
+- assertVisible: "Import books"
+
+- tapOn: "Sign in"
